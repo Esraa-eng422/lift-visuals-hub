@@ -12,12 +12,18 @@ const Progress: React.FC = () => {
         <h1 className="text-2xl font-bold text-gray-900 mb-6">Progress</h1>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-          <WorkoutFrequencyChart />
-          <StrengthProgressChart />
+          <div className="content-card p-4">
+            <WorkoutFrequencyChart />
+          </div>
+          <div className="content-card p-4">
+            <StrengthProgressChart />
+          </div>
         </div>
         
         <div className="grid grid-cols-1 gap-6">
-          <WorkoutVolumeChart />
+          <div className="content-card p-4">
+            <WorkoutVolumeChart />
+          </div>
         </div>
       </div>
     </DashboardLayout>

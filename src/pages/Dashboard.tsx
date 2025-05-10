@@ -44,8 +44,12 @@ const Dashboard: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <RecentWorkouts />
-          <TopRecords />
+          <div className="content-card p-5">
+            <RecentWorkouts />
+          </div>
+          <div className="content-card p-5">
+            <TopRecords />
+          </div>
         </div>
       </div>
     </DashboardLayout>

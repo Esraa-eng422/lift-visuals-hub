@@ -8,7 +8,9 @@ const WorkoutHistory: React.FC = () => {
     <DashboardLayout activePage="history">
       <div>
         <h1 className="text-2xl font-bold text-gray-900 mb-6">Workout History</h1>
-        <WorkoutList />
+        <div className="content-card p-5">
+          <WorkoutList />
+        </div>
       </div>
     </DashboardLayout>
   );

@@ -8,7 +8,9 @@ const PersonalRecords: React.FC = () => {
     <DashboardLayout activePage="records">
       <div>
         <h1 className="text-2xl font-bold text-gray-900 mb-6">Personal Records</h1>
-        <PersonalRecordsList />
+        <div className="content-card p-5">
+          <PersonalRecordsList />
+        </div>
       </div>
     </DashboardLayout>
   );
